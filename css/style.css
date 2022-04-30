@@ -1,7 +1,7 @@
-@import url(ingresoUsuario.css);
-@import url(todosLosProductos.css);
-@import url(similares.css);
-@import url(agregar.css);
+@import url(css\ingresoUsuario.css);
+@import url(css\todosLosProductos.css);
+@import url(css\similares.css);
+@import url(css\agregar.css);
 
 
 
@@ -81,7 +81,7 @@ header {
  .banner {
         display: flex;
         flex-direction: column;
-        background-image: url(/img/principal.png);
+        background-image: url(img\principal.png);
         background-size: cover;
         background-position: center center;
         position: static;

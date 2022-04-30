@@ -10,7 +10,7 @@ const agregar=()=>{
     
         <div class="agregarImg">
             <div class="arrastrarImg">
-                <img src="/img/Vector.png">
+                <img src="img\Vector.png">
                 <p>Arrastre para agregar una imagen para el producto</p>
             </div>
             <div class="arrastrarBoton">

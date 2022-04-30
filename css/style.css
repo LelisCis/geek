@@ -1,0 +1,488 @@
+@import url(/css/ingresoUsuario.css);
+@import url(/css/todosLosProductos.css);
+@import url(/css/similares.css);
+@import url(/css/agregar.css);
+
+
+
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+header {
+    background-color: white;
+
+}
+.cabecera_container {
+    width: 85%;
+    height: 8vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: .85rem;
+    padding-bottom: .85rem;
+    justify-content: space-between;
+    /* background-color: red; */
+    margin: auto;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.busqueda {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 30%;
+    }
+
+.busqueda_campo {
+    margin-left: 20px;
+    width: auto;
+    padding: 9px 22px 9px 26px;
+    border-radius: 20px;
+    border: 2px solid #cad3dc;
+    box-shadow: rgba(255, 255, 255, 0.5) -8px -8px 15px,
+        rgba(0, 0, 0, 0.1) 10px 10px 10px,
+        rgba(255, 255, 255, 0.5) -8px -8px 15px inset,
+        rgba(0, 0, 0, 0.1) 10px 10px 10px inset;
+    }
+
+.btn1, .btn2 {
+        background-color: transparent;
+        border: none;
+    }
+
+.login {
+        width: 182px;
+        height: 51px;
+        background-color: transparent;
+        border-color: #2A7AE4;
+        color:#2A7AE4;
+        cursor: pointer;
+   }
+
+.login:hover {
+        border-color: #4119d0;
+    }
+
+ .banner {
+        display: flex;
+        flex-direction: column;
+        background-image: url(/img/principal.png);
+        background-size: cover;
+        background-position: center center;
+        position: static;
+        justify-content: center;
+        height: 45vh;
+
+    }
+
+.texto {
+        color: white;
+        margin-left: .85rem;
+    }
+    
+.texto h1 { 
+        font-weight: 700;
+        font-size: 52px;
+        color: var(--fuente-banner);
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+
+
+.texto p {
+        font-weight: 400;
+        font-size: 20px;
+        color: var(--fuente-banner);
+        margin-bottom: 1.5rem;
+        text-align: left;
+    }
+
+.boton_consolas {
+    width: 6.8rem;
+    height: 3.1rem;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #2A7AE4;
+    color: white;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border: none;
+}
+.boton_consolas:hover {
+  transform:scale(1.2)
+}
+
+#seccion {
+    background-color: #F5F5F5;
+
+}
+
+.categorias {
+    width: 85%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto
+}
+
+.texto_categoria {
+    width: 85%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;   
+    padding: 0.85rem;
+    margin-top: 2rem;
+
+    }
+
+.categorias h2 {
+    font-size: 32px;
+    color: #464646;
+}
+
+.star, .consola, .diversos {
+    margin-left: -1rem;
+}
+
+.verTodo {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: #2A7AE4;
+    text-decoration: none;
+    font-weight: bold ;
+    cursor: pointer;
+}
+
+.texto_categoria img {
+    width:24px;
+    height:24px;
+}
+
+.cards {
+    display: grid;
+    gap: 10px; 
+    grid-template-columns: auto auto;
+
+} 
+
+.card {
+    padding-bottom: 20px;
+}
+
+
+.cards img {
+        width: calc(90%);
+        height: 161px;
+
+     }   
+
+.card h3 {
+    font-size: 14px;
+    color: #464646;
+}
+
+
+.card p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #464646;
+}
+
+.card a {
+    color: #2A7AE4;
+    text-decoration: none;
+}
+
+
+
+/* FORMULARIO DE CONTACTOS */
+
+#formulario {
+    width: 100%;
+    background-color: #EAF2FD;
+}
+    
+#formulario .grid-container {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    font-size: 16px;
+    color: #464646;
+    text-align: center;
+    padding-top: 50px;
+    padding-right: 40px;
+    cursor: pointer;
+
+
+}
+#formulario ul{
+padding-left: 0px;
+}
+
+
+#formulario ul li{
+    list-style: none;
+   
+}
+.info_empresa {
+    text-align: left;
+}
+
+
+#formulario h4 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#formulario input, textarea {
+    width: 560px;
+    border: none;
+    box-shadow: 0 5px 6px -6px #777;
+    border-radius: 5px;
+
+}
+
+#formulario .nombre {
+     height: 56px;
+}
+
+
+#formulario textarea {
+    margin-top: 10px;
+    resize: none;
+    height: 82px;
+
+}
+
+
+.boton-enviar {
+    width: 30%;
+    height: 3.1rem;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #2A7AE4;
+    color: white;
+    margin-top: 1rem;
+    text-align: center;
+    border: none;
+}
+
+.boton-enviar:hover{
+    transform: scale3d(1.2, 1.2, 1.2);
+}
+
+
+#desarrollo {
+    background-color: white;
+
+}
+
+
+footer {
+    text-align: center;
+    color: #777;
+    background-color: white;
+
+}
+
+footer div {
+    padding-top: 20px;
+}
+
+
+footer h4 {
+    margin-top: 0px;
+
+}
+
+
+
+
+
+/* .producto {
+    margin-left: 3em;
+    margin: auto;
+}
+
+.producto-small-img {
+    width: 85%;
+}
+
+.producto-small-img img {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, .2);
+    padding: 8px;
+    margin: 10px 10px 15px;
+    cursor: pointer;
+}
+
+
+.img-container {
+   padding: 10px;
+   width: 45%; 
+} */
+
+
+
+
+
+
+
+    @media screen and (max-width:480px){
+        
+     .texto h1 {
+         font-size: 22px
+    }
+    .texto p {
+        font-size: 14px;
+    }
+    #formulario .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+
+    }
+
+    .info_empresa {
+        text-align: center;
+    }
+
+} 
+
+
+
+    @media screen and (min-width:768px) {
+
+        .btn2 {
+            display: none;
+        }
+
+        .texto {
+            margin:120px;
+        }
+        #categorias_productos .cards {
+            grid-template-columns: auto auto auto auto;
+
+        }
+
+        #seccionTodos .cards {
+            grid-template-columns: auto auto auto;
+    
+        }
+
+    
+        .inputs, .btn-entrar {
+            width: 560px;
+        }
+     
+        
+        #formulario .nombre, .mensaje {
+            width: 434px;
+        }
+
+   
+
+
+
+
+}
+    
+    @media screen and (max-width:768px) {
+
+        .cabecera_logo {
+            width: 100px;
+            height: 28px;
+            margin-right: 5px;
+        }
+
+
+        .busqueda {
+            display: none;
+        }
+
+        .login {
+            width: 100px;
+            height: 41px;
+            margin-left: 5px;
+            margin-right: 5px;
+
+        }
+
+        .texto h1 {
+            font-size: 22px;
+        }
+
+        .hable_con_nosotros {
+            margin-left: 20px;
+
+        }
+        #formulario .nombre, .mensaje {
+            width:280px;
+        }
+
+        
+
+
+
+
+
+    }
+
+
+    @media screen and (min-width:1024px) {
+
+        #categorias_productos .cards {
+            grid-template-columns: auto auto auto auto auto auto;
+
+        }
+
+        #seccionTodos .cards {
+            grid-template-columns: auto auto auto auto auto auto;
+    
+        }
+        .logo_formulario2 {
+            display: none;
+        }
+
+        #formulario input, textarea {
+            width: 560px;
+        } 
+          
+  
+
+    } 
+
+
+
+
+    @media screen and (max-width:1024px) {
+
+        #categorias_productos .card:nth-child(n+5) {
+        display: none;
+        }
+
+        .logo_formulario1 {
+            display: none;
+        }
+
+}
+
+    

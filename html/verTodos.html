@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,700;1,200;1,300;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <title>Todos los productos</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="cabecera_container">
+            <a href="/html/index.html"><img class="cabecera_logo logo" src="/img/Logo.png" alt="Logo">
+            </a>
+
+            <div class="busqueda">
+                <form action=""></form>
+                <input type="search" class="busqueda_campo" name="search" placeholder="¿Qué desea buscar?"
+                    autocomplete="off">
+                <a href=""><button class="boton-busqueda btn1"><img src="/img/lupa.png" alt="Icono lupa"></button>
+                </a>
+            </div>
+
+            <button class="login" id="login" onclick="ingresar()">Login</button>
+            <button class="boton-busqueda btn2"><img src="/img/lupa.png" alt="Icono lupa"></button>
+        </div>
+    </header>
+
+
+    <main id="seccion">
+        
+        <div id="seccionTodos" class="categorias">
+
+            <div id="todosLosProductos" style="margin-top:20px">
+                <h2>Todos los produtos</h2>
+                <button class="btn-todos" id="btn-agregarProducto" onclick="agregar()">Agregar productos</button>
+            </div>
+                
+
+            <div id="img-contenedor" class="cards">
+
+                <div class="card">
+                    <img src="/img/primera/producto1.png" alt="">
+                    <h3>Producto XYZ</h3>
+                    <p>$60,00</p>
+                    <a href="/html/productosSimilares.html">Ver producto</a>
+                </div>
+
+                <div class="card">
+                    <img src="/img/primera/producto2.png" alt="">
+                    <h3>Producto XYZ</h3>
+                    <p>$60,00</p>
+                    <a href="">Ver producto</a>
+                </div>
+                <div class="card">
+                    <img src="/img/primera/producto3.png" alt="">
+                    <h3>Producto XYZ</h3>
+                    <p>$60,00</p>
+                    <a href="">Ver producto</a>
+                </div>
+                <div class="card">
+                    <img src="/img/primera/producto4.png" alt="">
+                    <h3>Producto XYZ</h3>
+                    <p>$60,00</p>
+                    <a href="">Ver producto</a>
+                </div>
+                <div class="card">
+                    <img src="/img/primera/producto5.png" alt="">
+                    <h3>Producto XYZ</h3>
+                    <p>$60,00</p>
+                    <a href="">Ver producto</a>
+                </div>
+                <div class="card">
+                    <img src="/img/primera/producto6.png" alt="">
+                    <h3>Producto XYZ</h3>
+                    <p>$60,00</p>
+                    <a href="">Ver producto</a>
+                </div>
+            </div>
+            <div id="consolas" class="cards">
+                <div class="card">
+                    <img src="/img/segunda/consola1.png" alt="">
+                    <h3>Control XYZ</h3>
+                    <p>$60,00</p>
+                    <a href="">Ver producto</a>
+                </div>
+                <div class="card">
+                    <img src="/img/segunda/consola2.png" alt="">
+                    <h3>Control y consola XYZ</h3>
+                    <p>$60,00</p>
+                    <a href="">Ver producto</a>
+                </div>
+                <div class="card">
+                    <img src="/img/segunda/consola3.png" alt="">
+                    <h3>Consola XYZ</h3>
+                    <p>$60,00</p>
+                    <a href="">Ver producto</a>
+                </div>
+                <div class="card">
+                    <img src="/img/segunda/consola4.png" alt="">
+                    <h3>Control XYZ</h3>
+                    <p>$60,00</p>
+                    <a href="">Ver producto</a>
+                </div>
+                <div class="card">
+                    <img src="/img/segunda/consola5.png" alt="">
+                    <h3>Consola XYZ</h3>
+                    <p>$60,00</p>
+                    <a href="">Ver producto</a>
+                </div>
+                <div class="card">
+                    <img src="/img/segunda/consola6.png" alt="">
+                    <h3>Game Boy Color</h3>
+                    <p>$60,00</p>
+                    <a href="">Ver producto</a>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <img src="/img/tercera/diversos1.png" alt="">
+                    <h3>Camisa atari</h3>
+                    <p>$60,00</p>
+                    <a href="">Ver producto</a>
+                </div>
+                <div class="card">
+                    <img src="/img/tercera/diversos2.png" alt="">
+                    <h3>Camisa SNES</h3>
+                    <p>$60,00</p>
+                    <a href="">Ver producto</a>
+                </div>
+                <div class="card">
+                    <img src="/img/tercera/diversos3.png" alt="">
+                    <h3>Control y consola XYZ</h3>
+                    <p>$60,00</p>
+                    <a href="">Ver producto</a>
+                </div>
+                <div class="card">
+                    <img src="/img/tercera/diversos4.png" alt="">
+                    <h3>Control y consola XYZ</h3>
+                    <p>$60,00</p>
+                    <a href="">Ver producto</a>
+                </div>
+                <div class="card">
+                    <img src="/img/tercera/diversos5.png" alt="">
+                    <h3>Control y consola XYZ</h3>
+                    <p>$60,00</p>
+                    <a href="">Ver producto</a>
+                </div>
+                <div class="card">
+                    <img src="/img/tercera/diversos6.png" alt="">
+                    <h3>Control y consola XYZ</h3>
+                    <p>$60,00</p>
+                    <a href="">Ver producto</a>
+                </div>
+            </div>
+            </div>
+        </main>
+
+    <section id="formulario">
+
+        <div class="grid-container">
+
+            <div>
+                <a href="/html/index.html"><img class="logo_formulario1 logo" src="/img/Logo.png" alt="Logo"></a>
+
+            </div>
+
+
+            <div class="info_empresa">
+                <a href="/html/index.html"><img class="logo_formulario2 logo" src="/img/Logo.png" alt="Logo"></a>
+                <h3>Quiénes somos</h3>
+                <h3>Política de privacidad</h3>
+                <h3>Programa de fidelidad</h3>
+                <h3>Nuestras tiendas</h3>
+                <h3>Quiero ser franquiciado</h3>
+                <h3>Anuncie aquí</h3>
+            </div>
+
+            <div class="hable_con_nosotros">
+                <form action="">
+                    <ul>
+                        <h4>Hable con nosotros</h4>
+
+                        <li><input id="nombre" type="text" class="nombre" placeholder=" Nombre" autocomplete="off"></li>
+                        <li><textarea id="mensaje" class="mensaje" name="" cols="30" rows="10"
+                                placeholder="Escribe tu mensaje"></textarea></li>
+                        <li><button class="boton-enviar" onclick="validacion()" type="submit">Enviar</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <footer id="desarollo">
+        <div>
+            <h4>Desarrollado por Leliuscris Cisneros</h4>
+            <p>2022</p>
+        </div>
+
+    </footer>
+
+
+
+    <script src="/js/login.js"></script>
+    <script src="/js/agregarProductos.js"></script>
+    <script src="/js/validarFormulario.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+</body>
+
+</html>

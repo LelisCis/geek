@@ -135,10 +135,13 @@
             </div>
 
    
-            <div class="hable_con_nosotros">
+            <div class="hable_con_nosotros"  onsubmit="submitForm(event)">
                 <form action="">
                     <ul>
                         <h4>Hable con nosotros</h4>
+                        <div id="campoVacio" class="error"></div>
+                        <div id="nombreLargo" class="error"></div>
+                        <div id="mensajeLargo" class="error"></div>
 
                         <li><input id="nombre" type="text" class="nombre" placeholder=" Nombre" autocomplete="off"></li>
                         <li><textarea id="mensaje" class="mensaje" name="" cols="30" rows="10"

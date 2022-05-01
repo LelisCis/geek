@@ -1,25 +1,26 @@
 function validacion(){
-    var nombre, mensaje;
+    var nombre, mensaje, campos;
     nombre = document.getElementById("nombre").value;
     mensaje =document.getElementById("mensaje").value;
+    campos = document.getElementById("#campoVacio");
+    nombreError = document.getElementById("#nombreLargo");
+    mensajeError= document.getElementById("#mensajeLargo");
+
   
-    console.log("hola");
-  
-  
-   
     if(nombre === "" || nombre === null || mensaje === ''  || mensaje === null){
-     alert('Todos los campos son obligatorios');
+
+      campoVacio.innerHTML=" ** Todos los campos son obligatorios";
        return false;
   
     }
   
-   else  if (nombre.length>40){
-      alert('El nombre es muy largo');
+     else  if (nombre.length>40){
+      nombreLargo.innerHTML=" ** El nombre es muy largo";
       return false;
     }
       
-   else if (mensaje.length>120){
-      alert('El mensaje es muy largo');
+    else if (mensaje.length>120){
+    mensajeLargo.innerHTML=" ** El mensaje es muy largo";
       return false;
     }
 
@@ -30,6 +31,9 @@ function validacion(){
 
 }
 
-
+  function submitForm(event){
+    event.preventDefault();
+    window.history.back();
+  }
 
 

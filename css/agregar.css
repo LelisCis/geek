@@ -2,14 +2,14 @@
 
 .contenedor-agregar {
    margin: auto;
-   width: 559px;
+   width: 300px;
    padding-bottom: 40px;
 
 
 }
 
 .agregarImg {
-    width: 559px;
+    width: 280px;
     height: 152px;
     display: grid;
     gap: 10px; 
@@ -20,7 +20,7 @@
 .arrastrarImg {
  
 
-    width: 301px;
+    width: 260px;
     height: 152px;
     border: 2px dashed #cfcaca;
     text-align: center;
@@ -45,7 +45,7 @@
 
 
 .custom-file-upload   {
-    width: 203px;
+    width: 240px;
     height: 51px;
     font-size: 16px;
     background-color: red;
@@ -78,10 +78,6 @@ input[type="file"] {
 
 
 
-
-
-
-
 .contenedor-agregar h3 {
     font-size: 32px;
     font-weight: 700;
@@ -97,7 +93,7 @@ input[type="file"] {
 
 
 .contenedor-inputs input{
-    width: 328px;
+    width: 280px;
 
     margin-top: 8px;
  
@@ -114,7 +110,7 @@ input[type="file"] {
 
 
 .btn-agregarProducto {
-    width: 328px;
+    width: 280px;
     height: 3.1rem;
     font-size: 16px;
     font-weight: 400;
@@ -155,6 +151,9 @@ input[type="file"] {
     width: 559px;
 
 }
+.contenedor-agregar {
+    width: 560px;
+}
 
 }
 
@@ -169,6 +168,9 @@ input[type="file"] {
       display: none;
   }
 
+  .arrastrarBoton {
+      display: none;
+  }
 
 }
 

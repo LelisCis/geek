@@ -11,7 +11,6 @@ const ingresar=()=>{
     <div id="correoInvalido" class="error"></div> 
     <div id="bienvenidoUsuario"></div> 
 
-
     <div>
     <input id= "usuario-mail" class="inputs input_usuario" type="text" class="form-control" placeholder=" Escriba su correo electrónico" required>
     </div>
@@ -68,4 +67,3 @@ function validarSesion(){
 
   
 
-    

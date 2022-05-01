@@ -7,6 +7,10 @@ const ingresar=()=>{
     <div class="ingreso">
 
     <h3>Iniciar sesión</h3>
+    <div id="camposVacios" class="error"></div>
+    <div id="correoInvalido" class="error"></div> 
+    <div id="bienvenidoUsuario"></div> 
+
 
     <div>
     <input id= "usuario-mail" class="inputs input_usuario" type="text" class="form-control" placeholder=" Escriba su correo electrónico" required>
@@ -18,6 +22,7 @@ const ingresar=()=>{
 
     <div class="">
     <button class="btn-entrar" onclick="validarSesion()">Entrar</button>
+    </a>
     </div>
 
 
@@ -33,28 +38,28 @@ function validarSesion(){
     mail = document.getElementById("usuario-mail").value;
     pass =document.getElementById("usuario-pass").value;
     expresion = /\w+@\w+\.+[a-z]/;
-    pagina =document.getElementById("")
-    mailUsuario = "usuario@ejemplo.com";
-    passContrasena = "passCorrecta";
-  
-    console.log("hola");
-  
-  
-   
+    var camposVacios = document.querySelector("#camposVacios");
+    var correoInvalido = document.querySelector("#correoInvalido");
+    var bienvenidoUsuario = document.querySelector("#bienvenidoUsuario");
+
+
+
+         
     if(mail === '' ||  mail === null || pass === '' || pass === null ){
-     alert('Todos los campos son obligatorios');
-       return false;
-  
+
+      camposVacios.innerHTML=" ** Todos los campos son obligatorios";
+      return false;
     }
  
     else if (!expresion.test(mail)){
-      alert('Ingresa un correo válido')
+      correoInvalido.innerHTML=" ** Ingresa un correo válido";
       return false
     }
 
 
-    else if (mail === "usuario@ejemplo.com" &&  passContrasena === "passCorrecta"){
-      return true
+    else if (mail ==='ejemplo@ejemplo.com' &&  pass === 'ejemplo'){
+     alert("¡Bienvenid@!")
+
     }
 
 

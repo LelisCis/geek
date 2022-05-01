@@ -43,27 +43,44 @@
     margin: auto;
 }
 
-.arrastrarBoton h4  {
-    font-size: 16px;
-    color: #464646;
-    
-}
 
-
-.arrastrarBoton button  {
+.custom-file-upload   {
     width: 203px;
     height: 51px;
+    font-size: 16px;
+    background-color: red;
+    margin: auto;
+
+
+    font-weight: 100;
     background-color: transparent;
     color: #2A7AE4;
     border: 2px solid #2A7AE4;
     cursor: pointer;
     margin-left: 10px;
+    text-align: center;
+    padding-top: 25px;
+
 }
-.arrastrarBoton button:hover  {
+
+.custom-file-upload:hover  {
 
     border-color: #4119d0;
 
+
 }
+
+
+input[type="file"] {
+    display: none;
+}
+
+
+
+
+
+
+
 
 .contenedor-agregar h3 {
     font-size: 32px;
@@ -115,6 +132,16 @@
 
 
 
+#bienvenidoUsuario {
+    width: 560px;
+    height: 40vh;
+    background-color: #2A7AE4;
+    font-size: 54px;
+    color: white;
+    display: none;
+}
+
+
 
 
 
@@ -138,10 +165,12 @@
         font-size: 22px;
               
     }
-  .arrastrarBoton {
+.custom-file-upload {
       display: none;
   }
 
 
 }
+
+
 

@@ -10,14 +10,15 @@ const agregar=()=>{
     
         <div class="agregarImg">
             <div class="arrastrarImg">
-                <img src="img\Vector.png">
-                <p>Arrastre para agregar una imagen para el producto</p>
+            <img src="img/Vector.png" id=img-preview>
+           <p>Arrastre para agregar una imagen para el producto</p>
             </div>
+           
             <div class="arrastrarBoton">
-            <h4>O</h4>
-            <button>Buscar en su computador</button>
-            </div>
-    </div>
+            <h4>O</h4>           
+            <label class="custom-file-upload"><input type="file"/>Buscar en su computadora</label>
+           </div>
+        </div>
 
    
         <div class= "contenedor-inputs">
@@ -43,6 +44,9 @@ const agregar=()=>{
         
         </div>
 
+    </div>
     
     `;
 }
+
+

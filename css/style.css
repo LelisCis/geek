@@ -341,10 +341,24 @@ footer h4 {
    width: 45%; 
 } */
 
+.busqueda ul  {
+    width: 300px;
+    border-radius: 10px;
+    /* border:solid 1px #2A7AE4; */
+    /* background-color: rgba(127, 238, 241, 0.8); */
+}
 
 
+.busqueda ul li {
 
+    text-align: center;
+    opacity: 0.8;
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
 
+} 
 
 
     @media screen and (max-width:480px){

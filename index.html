@@ -23,17 +23,24 @@
             </a>
 
             <div class="busqueda">
-                <form action=""></form>
-                <input type="search" class="busqueda_campo" name="search" placeholder="¿Qué desea buscar?"
-                    autocomplete="off">
-                <a href=""><button class="boton-busqueda btn1"><img src="img\lupa.png" alt="Icono lupa"></button>
-                </a>
-            </div>
+                <form action=""></form>    
 
+                
+                <input type="text" id="buscador" class="busqueda_campo form-control" name="search" placeholder="¿Qué desea buscar?"autocomplete="off">
+                <button id="boton-buscador" class="boton-busqueda btn1"><img src="img\lupa.png" alt="Icono lupa"></button> 
+                <ul id="resultado"></ul> 
+            </div>
             <button class="login" id="login" onclick="ingresar()">Login</button>
             <button class="boton-busqueda btn2"><img src="img\lupa.png" alt="Icono lupa"></button>
+           
         </div>
+
+
+
+
     </header>
+
+
 
 
     <section id="seccion">
@@ -61,45 +68,43 @@
 
                 <div class="card">
                     <img src="img\primera\producto1.png" alt="">
-                    <h3>Producto XYZ</h3>
+                    <h3>Taza Stormtrooper</h3>
                     <p>$60,00</p>
-                    <a href="productosSimilares.html">Ver producto</a>
-
+                   <a href="productosSimilares.html">Ver producto</a>
                 </div>
-
                 <div class="card">
                     <img src="img\primera\producto2.png" alt="">
-                    <h3>Producto XYZ</h3>
+                    <h3>Sujetalibros Darth Vader</h3>
                     <p>$60,00</p>
                     <a href="">Ver producto</a>
                 </div>
                 <div class="card">
                     <img src="img\primera\producto3.png" alt="">
-                    <h3>Producto XYZ</h3>
+                    <h3>Yoda</h3>
                     <p>$60,00</p>
                     <a href="">Ver producto</a>
                 </div>
                 <div class="card">
                     <img src="img\primera\producto4.png" alt="">
-                    <h3>Producto XYZ</h3>
+                    <h3>Stormtrooper</h3>
                     <p>$60,00</p>
                     <a href="">Ver producto</a>
                 </div>
                 <div class="card">
                     <img src="img\primera\producto5.png" alt="">
-                    <h3>Producto XYZ</h3>
+                    <h3>Baby Yoda</h3>
                     <p>$60,00</p>
                     <a href="">Ver producto</a>
                 </div>
                 <div class="card">
                     <img src="img\primera\producto6.png" alt="">
-                    <h3>Producto XYZ</h3>
+                    <h3>Kylo Ren</h3>
                     <p>$60,00</p>
                     <a href="">Ver producto</a>
                 </div>
             </div>
 
-            <div id="titulo_consola" class="texto_categoria" ">
+            <div id="titulo_consola" class="texto_categoria">
                 <h2 class=" consola">Consolas</h2>
                 <a href="verTodos.html"><button class="verTodo">Ver todo <img src="img\flecha.png" alt=""></button></a>
             </div>
@@ -107,25 +112,25 @@
             <div id="consolas" class="cards">
                 <div class="card">
                     <img src="img\segunda\consola1.png" alt="">
-                    <h3>Control XYZ</h3>
+                    <h3>Joystick inalámbrico</h3>
                     <p>$60,00</p>
                     <a href="">Ver producto</a>
                 </div>
                 <div class="card">
                     <img src="img\segunda\consola2.png" alt="">
-                    <h3>Control y consola XYZ</h3>
+                    <h3>Consola y control</h3>
                     <p>$60,00</p>
                     <a href="">Ver producto</a>
                 </div>
                 <div class="card">
                     <img src="img\segunda\consola3.png" alt="">
-                    <h3>Consola XYZ</h3>
+                    <h3>Nintendo</h3>
                     <p>$60,00</p>
                     <a href="">Ver producto</a>
                 </div>
                 <div class="card">
                     <img src="img\segunda\consola4.png" alt="">
-                    <h3>Control XYZ</h3>
+                    <h3>Set de Joystick</h3>
                     <p>$60,00</p>
                     <a href="">Ver producto</a>
                 </div>
@@ -137,7 +142,7 @@
                 </div>
                 <div class="card">
                     <img src="img\segunda\consola6.png" alt="">
-                    <h3>Game Boy Color</h3>
+                    <h3>Game boy color</h3>
                     <p>$60,00</p>
                     <a href="">Ver producto</a>
                 </div>
@@ -162,25 +167,25 @@
                 </div>
                 <div class="card">
                     <img src="img\tercera\diversos3.png" alt="">
-                    <h3>Control y consola XYZ</h3>
+                    <h3>Objeto decorativo</h3>
                     <p>$60,00</p>
                     <a href="">Ver producto</a>
                 </div>
                 <div class="card">
                     <img src="img\tercera\diversos4.png" alt="">
-                    <h3>Control y consola XYZ</h3>
+                    <h3>Radio reloj vintage</h3>
                     <p>$60,00</p>
                     <a href="">Ver producto</a>
                 </div>
                 <div class="card">
                     <img src="img\tercera\diversos5.png" alt="">
-                    <h3>Control y consola XYZ</h3>
+                    <h3>Lente Realidad Virtual</h3>
                     <p>$60,00</p>
                     <a href="">Ver producto</a>
                 </div>
                 <div class="card">
                     <img src="img\tercera\diversos6.png" alt="">
-                    <h3>Control y consola XYZ</h3>
+                    <h3>Pikachu</h3>
                     <p>$60,00</p>
                     <a href="">Ver producto</a>
                 </div>
@@ -246,8 +251,7 @@
     </footer>
 
 
-
-
+    <script src="js\buscador.js"></script>
     <script src="js\login.js"></script>
     <script src="js\agregarProductos.js"></script>
     <script src="js\validarFormulario.js"></script>
